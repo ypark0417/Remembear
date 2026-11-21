@@ -1,0 +1,43 @@
+{
+    "filetype": "C74Snapshot",
+    "version": 2,
+    "minorversion": 0,
+    "name": "Laverne.amxd",
+    "origin": "Laverne.amxd",
+    "type": "amxd",
+    "subtype": "Undefined",
+    "embed": 0,
+    "snapshot": {
+        "name": "Laverne.amxd",
+        "origname": "Package:/Max for Live/patchers/Max Instrument/Laverne/Laverne.amxd",
+        "valuedictionary": {
+            "parameter_values": {
+                "Attack": 79.7244094488189,
+                "Decay": 20.0,
+                "Release": 20.0,
+                "Sustain": 6.299212598425196,
+                "VelMod": 45.76539768189514,
+                "cutoff": 2500.0,
+                "env_amount": 100.0,
+                "filter_attack": 20.0,
+                "filter_decay": 233.06584715341782,
+                "filter_release": 139.0,
+                "filter_resonance": 0.5905511811023622,
+                "filter_sustain": 8.661417322834646,
+                "filter_tracking": -2.362204724409551,
+                "filter_velocity": 50.0,
+                "level": 0.0,
+                "osc1_level": 67.71653543307089,
+                "osc1_octave": 0.0,
+                "osc1_tune": 0.0,
+                "osc1_wave": 3.0,
+                "osc2_level": 52.75590551181101,
+                "osc2_octave": 1.0,
+                "osc2_tune": 5.0,
+                "osc2_wave": 3.0,
+                "voices": 0.0
+            }
+        },
+        "active": 1
+    }
+}
