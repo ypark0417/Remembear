@@ -42,7 +42,7 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 30.952380657196045, 1034.5237996578217, 90.0, 21.0 ],
+                    "patching_rect": [ 31.0, 1026.0, 90.0, 21.0 ],
                     "text": "FUTURE WORK",
                     "textcolor": [ 1.0, 0.8323456645, 0.4732058644, 1.0 ]
                 }
@@ -94,12 +94,12 @@
             {
                 "box": {
                     "id": "obj-248",
-                    "linecount": 19,
+                    "linecount": 6,
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 30.952380657196045, 1057.1428470611572, 320.0, 279.0 ],
-                    "text": "- Need to make safety for ear switch: to not go to the next count when a section is not played\n- 16 step 안에서 중간에 틀리면 다시 step1에서 인풋할수있는법\n\nbass:\n- chord function subsitution\n   - chord function lookup table\n- leading note\n- fill in the rest\n\ncontrol:\n- maps to different effects\n\nmapping:\n- mapping one-to-many: lpf + note division\n  - right arm: (note division ->) reverb\n  - left ear: (reverb ->)",
+                    "patching_rect": [ 31.0, 1049.0, 327.0, 92.0 ],
+                    "text": "- Jittery FSR input -> smoothing\n- Need to make safety for ear switch: to not go to the next count when a section is not played\n- Reset control for each melody, bass layer\n- Expressive contorls: mapping one-to-many",
                     "textcolor": [ 1.0, 0.8323456645, 0.4732058644, 1.0 ]
                 }
             },
@@ -418,12 +418,12 @@
             {
                 "box": {
                     "id": "obj-286",
-                    "linecount": 5,
+                    "linecount": 4,
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 31.034484386444092, 923.8095149993896, 320.0766282081604, 78.0 ],
-                    "text": "- sometimes harmony Laverne keep ringing after reset\n- `prev` reads extra note (index 1) in front and doesn't reverse right away\n- jittery FSR input -> average",
+                    "patching_rect": [ 31.034484386444092, 923.8095149993896, 320.0766282081604, 64.0 ],
+                    "text": "- Sometimes harmony Laverne keep ringing after reset\n- `prev` reads extra note (index 1) in front and doesn't reverse right away",
                     "textcolor": [ 0.4500938654, 0.9813225865, 0.4743030667, 1.0 ]
                 }
             },
@@ -3090,7 +3090,7 @@
                             "isbase64": 1,
                             "sliderorder": [],
                             "slidervisibility": [ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ],
-                            "blob": "1696.VMjLgboA...O+fWarAhckI2bo8la8HRLt.iHfTlai8FYo41Y8HRUTYTK3HxO9.BOVMEUy.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.iK77RREQVZzMzatQmbuwFakImO77hUSQ0LPwVcmklaSQWXzUlO.."
+                            "blob": "1696.VMjLgboA...O+fWarAhckI2bo8la8HRLt.iHfTlai8FYo41Y8HRUTYTK3HxO9.BOVMEUy.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.iK77RREQVZzMzatQmbuwFakImO77hUSQ0LPwVcmklaSQWXzUlO.."
                         },
                         "snapshotlist": {
                             "current_snapshot": 0,
@@ -3114,7 +3114,7 @@
                                         "isbase64": 1,
                                         "sliderorder": [],
                                         "slidervisibility": [ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ],
-                                        "blob": "1696.VMjLgboA...O+fWarAhckI2bo8la8HRLt.iHfTlai8FYo41Y8HRUTYTK3HxO9.BOVMEUy.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.iK77RREQVZzMzatQmbuwFakImO77hUSQ0LPwVcmklaSQWXzUlO.."
+                                        "blob": "1696.VMjLgboA...O+fWarAhckI2bo8la8HRLt.iHfTlai8FYo41Y8HRUTYTK3HxO9.BOVMEUy.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.iK77RREQVZzMzatQmbuwFakImO77hUSQ0LPwVcmklaSQWXzUlO.."
                                     },
                                     "fileref": {
                                         "name": "Bite",
@@ -3497,7 +3497,7 @@
                     "saved_object_attributes": {
                         "parameter_enable": 1,
                         "patchername": "Laverne.amxd",
-                        "patchername_fallback": "~/Documents/GitHub/EP-361_Assignments/YunhaPark/CompositionProject/Showcase/Code/RemembearSynthesisEngine/patchers/Laverne.amxd"
+                        "patchername_fallback": "~/Documents/GitHub/Remembear/src/RemembearSynthesisEngine/patchers/Laverne.amxd"
                     },
                     "snapshot": {
                         "filetype": "C74Snapshot",
@@ -3510,7 +3510,7 @@
                         "embed": 1,
                         "snapshot": {
                             "name": "Laverne.amxd",
-                            "origname": "~/Documents/GitHub/EP-361_Assignments/YunhaPark/CompositionProject/Showcase/Code/RemembearSynthesisEngine/patchers/Laverne.amxd",
+                            "origname": "~/Documents/GitHub/Remembear/src/RemembearSynthesisEngine/patchers/Laverne.amxd",
                             "valuedictionary": {
                                 "parameter_values": {
                                     "Attack": 79.7,
@@ -3555,7 +3555,7 @@
                                     "embed": 0,
                                     "snapshot": {
                                         "name": "Laverne.amxd",
-                                        "origname": "~/Documents/GitHub/EP-361_Assignments/YunhaPark/CompositionProject/Showcase/Code/RemembearSynthesisEngine/patchers/Laverne.amxd",
+                                        "origname": "~/Documents/GitHub/Remembear/src/RemembearSynthesisEngine/patchers/Laverne.amxd",
                                         "valuedictionary": {
                                             "parameter_values": {
                                                 "Attack": 79.7,
@@ -4318,7 +4318,7 @@
                     "saved_object_attributes": {
                         "parameter_enable": 1,
                         "patchername": "Laverne.amxd",
-                        "patchername_fallback": "~/Documents/GitHub/EP-361_Assignments/YunhaPark/CompositionProject/Showcase/Code/RemembearSynthesisEngine/patchers/Laverne.amxd"
+                        "patchername_fallback": "~/Documents/GitHub/Remembear/src/RemembearSynthesisEngine/patchers/Laverne.amxd"
                     },
                     "snapshot": {
                         "filetype": "C74Snapshot",
@@ -4331,7 +4331,7 @@
                         "embed": 1,
                         "snapshot": {
                             "name": "Laverne.amxd",
-                            "origname": "~/Documents/GitHub/EP-361_Assignments/YunhaPark/CompositionProject/Showcase/Code/RemembearSynthesisEngine/patchers/Laverne.amxd",
+                            "origname": "~/Documents/GitHub/Remembear/src/RemembearSynthesisEngine/patchers/Laverne.amxd",
                             "valuedictionary": {
                                 "parameter_values": {
                                     "Attack": 79.7244094488189,
@@ -4376,7 +4376,7 @@
                                     "embed": 0,
                                     "snapshot": {
                                         "name": "Laverne.amxd",
-                                        "origname": "~/Documents/GitHub/EP-361_Assignments/YunhaPark/CompositionProject/Showcase/Code/RemembearSynthesisEngine/patchers/Laverne.amxd",
+                                        "origname": "~/Documents/GitHub/Remembear/src/RemembearSynthesisEngine/patchers/Laverne.amxd",
                                         "valuedictionary": {
                                             "parameter_values": {
                                                 "Attack": 79.7244094488189,

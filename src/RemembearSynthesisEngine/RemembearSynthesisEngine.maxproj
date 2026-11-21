@@ -2,7 +2,7 @@
     "name": "RemembearSynthesisEngine",
     "version": 1,
     "creationdate": 3876619258,
-    "modificationdate": 3877618455,
+    "modificationdate": 3878074987,
     "viewrect": [ 25.0, 106.0, 300.0, 500.0 ],
     "autoorganize": 1,
     "hideprojectwindow": 0,
@@ -10,7 +10,7 @@
     "autolocalize": 0,
     "contents": {
         "patchers": {
-            "Remembear_SynthesisEngine_v4.maxpat": {
+            "remembear_synthesis_engine.maxpat": {
                 "kind": "patcher",
                 "local": 1
             }
