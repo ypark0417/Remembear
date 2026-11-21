@@ -2,7 +2,7 @@
 
 ## Project Description
 
-Remembear is a plushie instrument that remembers the user's touch. When the user touches or squeezes different parts of the plushie's body, Remembear remembers the input and uses it to compose a song in real time, with a clear musical structure and aesthetic. The user will feel as if Remembear is collaboratively composing with them, since their original motif input appears in the composition both as is and in transformed form.
+Remembear is a plushie instrument that remembers the user's touch. When the user touches or squeezes different parts of the plushie's body, Remembear remembers the input and uses it to compose a song in real time, with a clear musical structure and aesthetic. The user will feel as if Remembear is collaboratively composing with them, since their motif input will appear in the composition both in its original and transformed form.
 
 Here is the [link to a demonstration video](https://drive.google.com/file/d/1MXOZC_ItX4dhNBUSW9rlTSylKNMK16Rh/view?usp=drive_link) playing the *Remembear Theme* composition.
 
