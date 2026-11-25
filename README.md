@@ -43,8 +43,8 @@ The four FSRs are mapped to continuous controls of effect parameters.
 |---|---|---|
 | FSR A0 (GPIO 36) | \*Left arm | Filter cutoff |
 | FSR A3 (GPIO 39) | Right arm | Note division |
-| FSR A6 (GPIO 34) | Left leg | Reverb mix |
-| FSR A7 (GPIO 35) | Right leg | Bitcrush mix |
+| FSR A6 (GPIO 34) | Left ear | Reverb mix |
+| FSR A7 (GPIO 35) | Right ear | Bitcrush mix |
 
 \* *Left/right is from the user's perspective, facing the plushie; not from the plushie's perspective.*
 
